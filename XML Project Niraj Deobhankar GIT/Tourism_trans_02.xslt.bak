@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--*****************************************************************
+     Case 2 Destinations
+	 Q1. Put all trips to Himalaya sorted by Price
+	 
+******************************************************************-->
+
+<xsl:stylesheet version="1.0"
+xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:template match="/">
+	<html>
+	<body>
+		<h1>All trips to Himalaya</h1>
+			<table border="1">
+				<tr bgcolor="#9acd32">
+					<th>Title</th>
+					<th>Destination</th>
+					</tr>
+			<xsl:for-each select="//Trip">
+				<xsl:sort select="Destinations/Dest/@DestIdent=Himalaya" />
+					<tr>
+						<td><i><xsl:value-of select="Title" /></i></td>
+						<td><xsl:value-of select="Destinations/Dest/@DestIdent" /></td>
+					</tr>
+			</xsl:for-each>
+			</table>
+	</body>
+	</html>
+</xsl:template>
+</xsl:stylesheet>

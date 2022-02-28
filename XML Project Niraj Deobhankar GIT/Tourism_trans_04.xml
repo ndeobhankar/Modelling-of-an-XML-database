@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<Activities>
+<Activity>
+<ActivityName>BeachVisits</ActivityName>
+<Task>Visit different beaches and shacks.</Task>
+<Restriction></Restriction>
+<Restriction></Restriction>
+<Restriction></Restriction>
+</Activity>
+<Activity>
+<ActivityName>Bunjee</ActivityName>
+<Task>Jump from height safely.</Task>
+<Restriction></Restriction>
+<Restriction></Restriction>
+</Activity>
+<Activity>
+<ActivityName>Climbing</ActivityName>
+<Task>Climb the heights to experience natural beauty.</Task>
+<Restriction></Restriction>
+<Restriction></Restriction>
+<Restriction></Restriction>
+</Activity>
+<Activity>
+<ActivityName>FortVisits</ActivityName>
+<Task>Relive the history by visitng the forts.</Task>
+<Restriction></Restriction>
+<Restriction></Restriction>
+<Restriction></Restriction>
+</Activity>
+<Activity>
+<ActivityName>Meditation</ActivityName>
+<Task>Connect with yourself and disconnect with the world.</Task>
+<Restriction></Restriction>
+<Restriction></Restriction>
+<Restriction></Restriction>
+</Activity>
+<Activity>
+<ActivityName>MuseumVisits</ActivityName>
+<Task>Know about the history.</Task>
+<Restriction></Restriction>
+<Restriction></Restriction>
+<Restriction></Restriction>
+</Activity>
+<Activity>
+<ActivityName>RiverRafting</ActivityName>
+<Task>Enjoy the white waters in a boat.</Task>
+<Restriction></Restriction>
+<Restriction></Restriction>
+<Restriction></Restriction>
+</Activity>
+<Activity>
+<ActivityName>SightSeeing</ActivityName>
+<Task>Visit the nature's beautiful sights.</Task>
+<Restriction></Restriction>
+<Restriction></Restriction>
+<Restriction></Restriction>
+</Activity>
+</Activities>

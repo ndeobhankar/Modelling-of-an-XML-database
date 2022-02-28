@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Tourism>
+	
+	<Trip TripId="c1-Himalaya-Ad" Price="1000" NumberOfDays="10" Genre="Adventure">
+		<Title> The Elegant Himalya </Title>
+		<StartDate>2022-05-02</StartDate>
+		<StartDate>2022-06-17</StartDate>
+		<Companies>	<Comp CompIdent="c1" />	</Companies>
+		<Customers>	
+			<Custom CustomIdent="JW" />	
+			<Custom CustomIdent="HW" />
+			<Custom CustomIdent="RG" />
+			<Custom CustomIdent="MG" />
+		</Customers>
+		<Destinations> <Dest DestIdent="Himalaya" /> </Destinations>
+		<Activities> 
+			<Act ActIdent="Bunjee" /> 
+			<Act ActIdent="Climbing" />
+			<Act ActIdent="RiverRafting" />
+		</Activities>
+		<Remark> This <TripRef TripIdent="c1-Himalaya-Ad" /> is the most economical trip to adeventurous Himalaya.</Remark>
+	</Trip>
+	
+	<Trip TripId="c1-Himalaya-Sp" Price="1050" NumberOfDays="15" Genre="Spiritual">
+		<Title>The Calm Himalaya</Title>
+		<StartDate>2022-05-06</StartDate>
+		<StartDate>2022-07-22</StartDate>
+		<Companies>	<Comp CompIdent="c2" />	</Companies>
+		<Customers>	
+			<Custom CustomIdent="JW" />	
+			<Custom CustomIdent="HW" />
+			<Custom CustomIdent="MG" />
+		</Customers>
+		<Destinations> <Dest DestIdent="Himalaya" /> </Destinations>
+		<Activities> 
+			<Act ActIdent="Meditation" /> 
+		</Activities>
+		<Remark> You can combine this trip <TripRef TripIdent="c1-Himalaya-Sp" /> with <TripRef TripIdent="c1-Himalaya-Ad" /> and get a great deal!</Remark>
+	</Trip>
+	
+	<Trip TripId="c2-Himalaya-Ad" Price="0900" NumberOfDays="8" Genre="Adventure">
+		<Title>The Mini Himalya</Title>
+		<StartDate>2022-05-11</StartDate>
+		<StartDate>2022-05-27</StartDate>
+		<Companies>	<Comp CompIdent="c2" />	</Companies>
+		<Customers>	
+			<Custom CustomIdent="JAB" />	
+			<Custom CustomIdent="ROG" />
+			<Custom CustomIdent="GCP" />
+		</Customers>
+		<Destinations> <Dest DestIdent="Himalaya" /> </Destinations>
+		<Activities> 
+			<Act ActIdent="Bunjee" /> 
+			<Act ActIdent="Climbing" />
+			<Act ActIdent="RiverRafting" />
+		</Activities>
+		<Remark> People say that this <TripRef TripIdent="c2-Himalaya-Ad" /> is the most action-packed 8 days!</Remark>
+	</Trip>
+	
+	<Trip TripId="c3-Himalaya-Ad" Price="1700" NumberOfDays="15" Genre="Adventure">
+		<Title>The Himalayan Adventure</Title>
+		<StartDate>2022-05-09</StartDate>
+		<StartDate>2022-06-25</StartDate>
+		<Companies>	<Comp CompIdent="c2" />	</Companies>
+		<Customers>	
+			<Custom CustomIdent="PHB" />	
+			<Custom CustomIdent="JT" />
+		</Customers>
+		<Destinations> <Dest DestIdent="Himalaya" /> </Destinations>
+		<Activities> 
+			<Act ActIdent="Bunjee" /> 
+			<Act ActIdent="Climbing" />
+			<Act ActIdent="RiverRafting" />
+			<Act ActIdent="SightSeeing" />
+		</Activities> 
+		<Remark> This trip <TripRef TripIdent="c3-Himalaya-Ad" /> is with most activties!</Remark>
+	</Trip>
+	
+	<Trip TripId="c1-Sahyadri-Ad" Price="1000" NumberOfDays="10" Genre="Adventure">
+		<Title>The Elegant Sahyadri</Title>
+		<StartDate>2022-06-03</StartDate>
+		<StartDate>2022-07-17</StartDate>
+		<Companies>	<Comp CompIdent="c1" />	</Companies>
+		<Customers>	
+			<Custom CustomIdent="CB" />	
+			<Custom CustomIdent="GCP" />
+			<Custom CustomIdent="HW" />
+			<Custom CustomIdent="JT" />
+		</Customers>
+		<Destinations> <Dest DestIdent="Sahyadri" /> </Destinations>
+		<Activities> 
+			<Act ActIdent="Bunjee" /> 
+			<Act ActIdent="Climbing" />
+			<Act ActIdent="SightSeeing" />
+		</Activities>
+		<Remark> This <TripRef TripIdent="c1-Sahyadri-Ad" /> is the most economical trip to adeventurous Sahyadri.</Remark>
+	</Trip>
+	
+	<Trip TripId="c2-Sahyadri-Ad" Price="0700" NumberOfDays="8" Genre="Adventure">
+		<Title>The Mini Sahyadri</Title>
+		<StartDate>2022-06-11</StartDate>
+		<StartDate>2022-06-27</StartDate>
+		<Companies>	<Comp CompIdent="c2" />	</Companies>
+		<Customers>	
+			<Custom CustomIdent="VIB" />	
+			<Custom CustomIdent="STB" />
+			<Custom CustomIdent="CSD" />
+		</Customers>
+		<Destinations> <Dest DestIdent="Sahyadri" /> </Destinations>
+		<Activities> 
+			<Act ActIdent="Bunjee" /> 
+			<Act ActIdent="Climbing" />
+			<Act ActIdent="Meditation" />
+		</Activities>
+		<Remark> People say that this <TripRef TripIdent="c2-Sahyadri-Ad" /> is the most action-packed 8 days!</Remark>
+	</Trip>
+	
+	<Trip TripId="c2-Sahyadri-Na" Price="0900" NumberOfDays="8" Genre="Nature">
+		<Title>The Natural Sahyadri</Title>
+		<StartDate>2022-06-21</StartDate>
+		<StartDate>2022-07-27</StartDate>
+		<Companies>	<Comp CompIdent="c2" />	</Companies>
+		<Customers>	
+			<Custom CustomIdent="SSD" />	
+			<Custom CustomIdent="PRD" />
+			<Custom CustomIdent="SMD" />
+		</Customers>
+		<Destinations> <Dest DestIdent="Sahyadri" /> </Destinations>
+		<Activities> 
+			<Act ActIdent="SightSeeing" /> 
+			<Act ActIdent="Climbing" />
+		</Activities>
+		<Remark> Experience the calm Sahyadri <TripRef TripIdent="c2-Sahyadri-Na" /> by trekking in the mountains.</Remark>
+	</Trip>
+	
+	<Trip TripId="c1-Humpi-Hi" Price="1500" NumberOfDays="15" Genre="History">
+		<Title>The Humpi History</Title>
+		<StartDate>2022-04-12</StartDate>
+		<StartDate>2022-05-07</StartDate>
+		<Companies>	<Comp CompIdent="c1" />	</Companies>
+		<Customers>	
+			<Custom CustomIdent="MG" />	
+			<Custom CustomIdent="JW" />
+			<Custom CustomIdent="RG" />
+			<Custom CustomIdent="JT" />
+		</Customers>
+		<Destinations> <Dest DestIdent="Humpi" /> </Destinations>
+		<Activities> 
+			<Act ActIdent="FortVisits" /> 
+			<Act ActIdent="MuseumVisits" />
+			<Act ActIdent="Meditation" />
+		</Activities>
+		<Remark> Connect with India's rich history at Humpi. <TripRef TripIdent="c1-Humpi-Hi" /> </Remark>
+	</Trip>
+	
+	<Trip TripId="c3-Humpi-Hi" Price="0700" NumberOfDays="8" Genre="History">
+		<Title>The Historical Humpi</Title>
+		<StartDate>2022-05-21</StartDate>
+		<StartDate>2022-07-07</StartDate>
+		<Companies>	<Comp CompIdent="c3" />	</Companies>
+		<Customers>	
+			<Custom CustomIdent="NCD" />	
+			<Custom CustomIdent="AVA" />
+			<Custom CustomIdent="NIA" />
+		</Customers>
+		<Destinations> <Dest DestIdent="Humpi" /> </Destinations>
+		<Activities> 
+			<Act ActIdent="FortVisits" /> 
+			<Act ActIdent="MuseumVisits" />
+		</Activities>
+		<Remark> Connect with India's rich history at Humpi. <TripRef TripIdent="c3-Humpi-Hi" /> </Remark>
+	</Trip>
+	
+	<Trip TripId="c1-Goa-Le" Price="0950" NumberOfDays="8" Genre="Leisure">
+		<Title>The Relaxed Goa</Title>
+		<StartDate>2022-04-21</StartDate>
+		<StartDate>2022-05-07</StartDate>
+		<Companies>	<Comp CompIdent="c2" />	</Companies>
+		<Customers>	
+			<Custom CustomIdent="GCP" />	
+			<Custom CustomIdent="JAB" />
+			<Custom CustomIdent="VIB" />
+			<Custom CustomIdent="MG" />
+			<Custom CustomIdent="RG" />
+		</Customers>
+		<Destinations> <Dest DestIdent="Goa" /> </Destinations>
+		<Activities> 
+			<Act ActIdent="FortVisits" /> 
+			<Act ActIdent="MuseumVisits" />
+			<Act ActIdent="BeachVisits" />
+			<Act ActIdent="SightSeeing" />
+		</Activities>
+		<Remark> Relax in Goa <TripRef TripIdent="c1-Goa-Le" /> </Remark>
+	</Trip>
+	
+	<Trip TripId="c3-Goa-Le" Price="0500" NumberOfDays="5" Genre="Leisure">
+		<Title>The Mini Goa</Title>
+		<StartDate>2022-05-21</StartDate>
+		<StartDate>2022-08-07</StartDate>
+		<Companies>	<Comp CompIdent="c2" />	</Companies>
+		<Customers>	
+			<Custom CustomIdent="CSD" />	
+			<Custom CustomIdent="SSD" />
+			<Custom CustomIdent="NCD" />
+		</Customers>
+		<Destinations> <Dest DestIdent="Goa" /> </Destinations>
+		<Activities> 
+			<Act ActIdent="FortVisits" /> 
+			<Act ActIdent="MuseumVisits" />
+			<Act ActIdent="BeachVisits" />
+		</Activities>
+		<Remark> This is a short trip <TripRef TripIdent="c3-Goa-Le" /> to Goa</Remark>
+	</Trip>
+	
+	<Company CompId="c1">
+		<Website >www.c1.com</Website>
+		<Contact>0919528826526</Contact>
+	</Company>
+
+	<Company CompId="c2">
+		<Website>www.c2.com</Website>
+		<Contact>0914874841841</Contact>
+	</Company>
+	
+	<Company CompId="c3">
+		<Website>www.c3.com</Website>
+		<Contact>0918447841851</Contact>
+	</Company>
+	
+	<Customer CustomId="JW">
+		<First_Name>Jennifer</First_Name>
+		<Last_Name>Widom</Last_Name>
+		<email>jennifer@gmail.com</email>
+	</Customer>
+	
+	<Customer CustomId="HW">
+		<First_Name>Hector</First_Name>
+		<Last_Name>Wid</Last_Name>
+		<email>hector@gmail.com</email>
+	</Customer>
+	
+	<Customer CustomId="CB">
+		<First_Name>Chandler</First_Name>
+		<Last_Name>Bing</Last_Name>
+		<email>cbing@gmail.com</email>
+	</Customer>
+	
+	<Customer CustomId="JT">
+		<First_Name>Joey</First_Name>
+		<Last_Name>Tribiani</Last_Name>
+		<email>joey@gmail.com</email>
+	</Customer>
+	
+	<Customer CustomId="MG">
+		<First_Name>Monica</First_Name>
+		<Last_Name>Geller</Last_Name>
+		<email>monica@gmail.com</email>
+	</Customer>
+	
+	<Customer CustomId="RG">
+		<First_Name>Racheal</First_Name>
+		<Last_Name>Green</Last_Name>
+		<email>rgreen@gmail.com</email>
+	</Customer>
+	
+	<Customer CustomId="ROG">
+		<First_Name>Ross</First_Name>
+		<Last_Name>Geller</Last_Name>
+		<email>rossg@gmail.com</email>
+	</Customer>
+	
+	<Customer CustomId="PHB">
+		<First_Name>Pheboey</First_Name>
+		<Last_Name>Buffet</Last_Name>
+		<email>pbyffet@gmail.com</email>
+	</Customer>
+	
+	<Customer CustomId="GCP">
+		<First_Name>Gunther</First_Name>
+		<Last_Name>Park</Last_Name>
+		<email>gpark@gmail.com</email>
+	</Customer>
+	
+	<Customer CustomId="JAB">
+		<First_Name>Janice</First_Name>
+		<Last_Name>Bing</Last_Name>
+		<email>jbing@gmail.com</email>
+	</Customer>
+	
+	<Customer CustomId="VIB">
+		<First_Name>Vicrotia</First_Name>
+		<Last_Name>Bing</Last_Name>
+		<email>vicbing@gmail.com</email>
+	</Customer>
+	
+	<Customer CustomId="STB">
+		<First_Name>Staphane</First_Name>
+		<Last_Name>Baum</Last_Name>
+		<email>sbaum@gmail.com</email>
+	</Customer>
+	
+	<Customer CustomId="CSD">
+		<First_Name>Shekhar</First_Name>
+		<Last_Name>Deo</Last_Name>
+		<email>sdeo@gmail.com</email>
+	</Customer>
+	
+	<Customer CustomId="SSD">
+		<First_Name>Smita</First_Name>
+		<Last_Name>Deo</Last_Name>
+		<email>smitad@gmail.com</email>
+	</Customer>
+	
+	<Customer CustomId="PRD">
+		<First_Name>Pranoti</First_Name>
+		<Last_Name>Deo</Last_Name>
+		<email>pdeo@gmail.com</email>
+	</Customer>
+	
+	<Customer CustomId="SMD">
+		<First_Name>Smita</First_Name>
+		<Last_Name>Deo</Last_Name>
+		<email>smitad@gmail.com</email>
+	</Customer>
+	
+	<Customer CustomId="NCD">
+		<First_Name>Niraj</First_Name>
+		<Last_Name>Deo</Last_Name>
+		<email>ndeo@gmail.com</email>
+	</Customer>
+	
+	<Customer CustomId="AVA">
+		<First_Name>Ankit</First_Name>
+		<Last_Name>Vasu</Last_Name>
+		<email>ankitv@gmail.com</email>
+	</Customer>
+	
+	<Customer CustomId="NIA">
+		<First_Name>Niyati</First_Name>
+		<Last_Name>Vasu</Last_Name>
+		<email>niyativ@gmail.com</email>
+	</Customer>
+	
+	<Destination DestId="Himalaya">
+		<Hotel>Hotel Himalaya</Hotel>
+		<Hotel>The Grand Himalaya</Hotel>
+		<Hotel>Himalaya Inn</Hotel>
+		<Hotel>Ibis</Hotel>
+		<Hotel>HolidayInn</Hotel>
+		<Hotel>Marriot International</Hotel>
+		<Restaurant>Garcia-Molina</Restaurant>
+		<Restaurant>The Vegeta</Restaurant>
+		<Restaurant>The Non-veg King</Restaurant>
+		<Restaurant>McDonalds</Restaurant>
+		<Restaurant>The Spice</Restaurant>
+	</Destination>
+	
+	<Destination DestId="Sahyadri">
+		<Hotel>Hotel Sahyadri</Hotel>
+		<Hotel>The Grand Sahyadri</Hotel>
+		<Hotel>Sahyadri Inn</Hotel>
+		<Hotel>Ibis</Hotel>
+		<Hotel>HolidayInn</Hotel>
+		<Hotel>Marriot International</Hotel>
+		<Restaurant>Sahyadri Marathi</Restaurant>
+		<Restaurant>The Vegeta</Restaurant>
+		<Restaurant>The Spice</Restaurant>
+	</Destination>
+	
+	<Destination DestId="Humpi">
+		<Hotel>Hotel Humpi</Hotel>
+		<Hotel>The Grand Humpi</Hotel>
+		<Hotel>Ibis</Hotel>
+		<Hotel>HolidayInn</Hotel>
+		<Restaurant>Kannada Spice</Restaurant>
+		<Restaurant>The Humpi Spice</Restaurant>
+		<Restaurant>The Vegeta</Restaurant>
+		<Restaurant>McDonalds</Restaurant>
+	</Destination>
+	
+	<Destination DestId="Goa">
+		<Hotel>Hotel Goa</Hotel>
+		<Hotel>The Grand Goa</Hotel>
+		<Hotel>Ibis</Hotel>
+		<Hotel>HolidayInn</Hotel>
+		<Hotel>Marriot International</Hotel>
+		<Restaurant>Goan Spice</Restaurant>
+		<Restaurant>The Goan Spice</Restaurant>
+		<Restaurant>The Spicey Fish</Restaurant>
+		<Restaurant>The Vegeta</Restaurant>
+		<Restaurant>McDonalds</Restaurant>
+	</Destination>
+	
+	<Activity ActId="Bunjee">
+		<task>Jump from height safely.</task>
+		<restrictions>1. Participants should be physically fit.</restrictions>
+		<restrictions>2. Participants must sign a no-objection contract before the activity.</restrictions>
+	</Activity>
+	
+	<Activity ActId="Climbing">
+		<task>Climb the heights to experience natural beauty.</task>
+		<restrictions>1. Participants should be physically fit.</restrictions>
+		<restrictions>2. The group walks at least 10 kilometers in a day.</restrictions>
+		<restrictions>3. If you need any special assistance, inform us in advance.</restrictions>
+	</Activity>
+
+	<Activity ActId="RiverRafting">
+		<task>Enjoy the white waters in a boat.</task>
+		<restrictions>1. Participants should be physically fit.</restrictions>
+		<restrictions>2. Participants must know swimming.</restrictions>
+		<restrictions>3. Participants must sign a no-objection contract before the activity.</restrictions>
+	</Activity>
+	
+	<Activity ActId="SightSeeing">
+		<task>Visit the nature's beautiful sights.</task>
+		<restrictions>1. Vehicles will be arranged by the organisers from hotels to sights and back.</restrictions>
+		<restrictions>2. The schedule is provided to guests in advanced. </restrictions>
+		<restrictions>3. The guests must pay entry charges if applicable. </restrictions>
+	</Activity>
+	
+	<Activity ActId="MuseumVisits">
+		<task>Know about the history.</task>
+		<restrictions>1. Vehicles will be arranged by the organisers from hotels to museums and back.</restrictions>
+		<restrictions>2. The schedule is provided to guests in advanced. </restrictions>
+		<restrictions>3. The guests must pay entry charges if applicable. </restrictions>
+	</Activity>
+	
+	<Activity ActId="FortVisits">
+		<task>Relive the history by visitng the forts.</task>
+		<restrictions>1. Vehicles will be arranged by the organisers from hotels to forts and back.</restrictions>
+		<restrictions>2. The schedule is provided to guests in advanced. </restrictions>
+		<restrictions>3. The guests must pay entry charges if applicable. </restrictions>
+	</Activity>
+	
+	<Activity ActId="Meditation">
+		<task>Connect with yourself and disconnect with the world.</task>
+		<restrictions>1. The meditation sessions are arranged by organisers.</restrictions>
+		<restrictions>2. The schedule and venue is provided to guests in advanced. </restrictions>
+		<restrictions>3. Vehicles will be provided by the organisaers from hotels and back if needed. </restrictions>
+	</Activity>
+	
+	<Activity ActId="BeachVisits">
+		<task>Visit different beaches and shacks.</task>
+		<restrictions>1. The beach visits are arranged by organisers.</restrictions>
+		<restrictions>2. The schedule and venue is provided to guests in advanced. </restrictions>
+		<restrictions>3. Vehicles will be provided by the organisaers from hotels and back if needed. </restrictions>
+	</Activity>
+	
+</Tourism>

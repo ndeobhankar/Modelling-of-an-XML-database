@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--*****************************************************************
+ Author: Niraj Chandrashekhar Deobhankar DSTI A21 DA
+ xs for Tourism-xs.xml
+ The root element is Tourism. 
+ The main five elements are Trip, Company, Customer, Destination, and Activity. 
+******************************************************************-->
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:web="http://www.w3.org/TR/xml-names/" >
+	<xs:element name="Tourism">
+		
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Trip" type="TripType" minOccurs="0" maxOccurs="unbounded" />
+				<xs:element name="Company" type="CompanyType" minOccurs="0" maxOccurs="unbounded" />
+				<xs:element name="Customer" type="CustomerType" minOccurs="0" maxOccurs="unbounded" />
+				<xs:element name="Destination" type="DestinationType" minOccurs="0" maxOccurs="unbounded" />
+				<xs:element name="Activity" type="ActivityType" minOccurs="0" maxOccurs="unbounded" />
+			</xs:sequence>
+		</xs:complexType>
+		
+		<xs:key name="TripKey">
+			<xs:selector xpath="Trip" />
+			<xs:field xpath="@TripId" />
+		</xs:key>
+		<xs:key name="CompanyKey">
+			<xs:selector xpath="Company" />
+			<xs:field xpath="@CompId" />
+		</xs:key>
+		<xs:key name="CustomerKey">
+			<xs:selector xpath="Customer" />
+			<xs:field xpath="@CustomId" />
+		</xs:key>
+		<xs:key name="DestinationKey">
+			<xs:selector xpath="Destination" />
+			<xs:field xpath="@DestId" />
+		</xs:key>
+		<xs:key name="ActivityKey">
+			<xs:selector xpath="Activity" />
+			<xs:field xpath="@ActId" />
+		</xs:key>
+		
+		<xs:keyref name="ActivityKeyRef" refer="ActivityKey">
+			<xs:selector xpath="Trip/Activities/Act" />
+			<xs:field xpath="@ActIdent" />
+		</xs:keyref>
+		<xs:keyref name="CustomerKeyRef" refer="CustomerKey">
+			<xs:selector xpath="Trip/Customers/Custom" />
+			<xs:field xpath="@CustomIdent" />
+		</xs:keyref>
+		<xs:keyref name="DestinationKeyRef" refer="DestinationKey">
+			<xs:selector xpath="Trip/Destinations/Dest" />
+			<xs:field xpath="@DestIdent" />
+		</xs:keyref>
+		<xs:keyref name="CompanyKeyRef" refer="CompanyKey">
+			<xs:selector xpath="Trip/Companies/Comp" />
+			<xs:field xpath="@CompIdent" />
+		</xs:keyref>
+		<xs:keyref name="TripKeyRef" refer="TripKey">
+			<xs:selector xpath="Trip/Remark/TripRef" />
+			<xs:field xpath="@TripIdent" />
+		</xs:keyref>
+	</xs:element>
+	
+	<xs:complexType name="TripType">
+		<xs:sequence>
+			
+			<xs:element name="Title" type="xs:string" />
+			<xs:element name="StartDate" type="xs:date" maxOccurs="5"/>
+			<xs:element name="Companies">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Comp" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:attribute name="CompIdent" type="xs:string" use="required" />
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			
+			<xs:element name="Customers">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Custom" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:attribute name="CustomIdent" type="xs:string" use="required" />
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			
+			<xs:element name="Destinations">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Dest" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:attribute name="DestIdent" type="xs:string" use="required" />
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			
+			<xs:element name="Activities">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="Act" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:attribute name="ActIdent" type="xs:string" use="required" />
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+			
+			<xs:element name="Remark" minOccurs="0">
+				<xs:complexType mixed="true">
+					<xs:sequence>
+						<xs:element name="TripRef" minOccurs="0" maxOccurs="unbounded">
+							<xs:complexType>
+								<xs:attribute name="TripIdent" type="xs:string" use="required" />
+							</xs:complexType>
+						</xs:element>
+					</xs:sequence>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="TripId" type="xs:string" use="required" />
+		<xs:attribute name="Price" type="xs:integer" use="required" />
+		<xs:attribute name="NumberOfDays" type="xs:integer" use="required" />
+		<xs:attribute name="Genre" type="xs:string" use="required" />
+	
+	</xs:complexType>
+	<xs:complexType name="CompanyType">
+		<xs:sequence>
+			<xs:element name="Website" type="xs:string" />	
+			<xs:element name="Contact" type="xs:integer" />
+		</xs:sequence>
+		<xs:attribute name="CompId" type="xs:string" use="required" />
+	</xs:complexType>
+	
+	<xs:complexType name="CustomerType">
+		<xs:sequence>
+			<xs:element name="First_Name" type="xs:string" />
+			<xs:element name="Last_Name" type="xs:string" />
+			<xs:element name="email" type="xs:string" />
+		</xs:sequence>
+		<xs:attribute name="CustomId" type="xs:string" use="required" />
+	</xs:complexType>
+	
+	<xs:complexType name="DestinationType">
+		<xs:sequence>
+			<xs:element name="Hotel" type="xs:string" maxOccurs="10"/>
+			<xs:element name="Restaurant" type="xs:string" maxOccurs="10" />
+		</xs:sequence>
+		<xs:attribute name="DestId" type="xs:string" use="required" />
+	</xs:complexType>
+	
+	<xs:complexType name="ActivityType">
+		<xs:sequence>
+			<xs:element name="task" type="xs:string" maxOccurs="10"/>
+			<xs:element name="restrictions" type="xs:string" maxOccurs="10" />
+		</xs:sequence>
+		<xs:attribute name="ActId" type="xs:string" use="required" />
+	</xs:complexType>
+
+</xs:schema>
